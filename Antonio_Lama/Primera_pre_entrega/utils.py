@@ -1,5 +1,5 @@
 import json
-path = '/Users/tonolama/Documents/Coderbeca_python/Proyecto_final/Primera_pre_entrega/base_datos.json'
+path = '/base_datos.json'
 
 try:
     with open(path) as f:
