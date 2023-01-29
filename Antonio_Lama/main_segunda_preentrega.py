@@ -1,4 +1,4 @@
-from Segunda_pre_entrega.Class_utils import Client
+from Antonio_Lama.Segunda_pre_entrega.Class_utils import Client
 
 
 cliente1 = Client()

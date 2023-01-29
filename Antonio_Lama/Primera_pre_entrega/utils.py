@@ -1,5 +1,5 @@
 import json
-path = '/base_datos.json' # crear el path a la carpeta que desees
+path = '/base_datos.json' # agregar el path que te quede mejor
 
 try:
     with open(path) as f:

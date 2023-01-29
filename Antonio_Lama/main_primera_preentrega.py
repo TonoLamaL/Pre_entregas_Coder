@@ -1,5 +1,5 @@
 ''' PRE_ENTREGA N°1 -> Crear un programa para registro e inicio de sesión '''
-from Primera_pre_entrega.utils import *
+from Antonio_Lama.Primera_pre_entrega.utils import *
 
 menu = ''' \n
 Selecciona del Menú alguna de estas opciones: 
