@@ -1,8 +1,8 @@
 ''' PRE_ENTREGA N°1 -> Crear un programa para registro e inicio de sesión '''
 try:
-    from utils import *
+    from Antonio_Lama.Primera_pre_entrega.utils import *
 except Exception:
-    print('Debes instalar el paquete Antonio_Lama-1.0 antes de arrancar')
+    print('** Debes instalar el paquete Antonio_Lama-1.0 antes de arrancar **')
 else:
     menu = ''' \n
     Selecciona del Menú alguna de estas opciones: 
