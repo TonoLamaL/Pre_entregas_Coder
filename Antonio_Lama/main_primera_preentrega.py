@@ -35,8 +35,9 @@ else:
             elif action.upper() == 'S':
                 show_users()
             elif action.upper() == 'L':
-                if login() == True:
-                    desktop()
+                username = login()
+                print(username)
+                desktop()
             elif action.upper() == 'CLEAR': # no lo muestro en el menú. Si se usa se debe volver a crear el ADMIN
                 base_datos_dict.clear()
             else:

@@ -1,5 +1,15 @@
 import json
-path = '/base_datos.json' # agregar el path que te quede mejor
+import os
+import errno
+
+try:
+    os.mkdir('base_datos_antonio')
+except OSError as e:
+    if e.errno != errno.EEXIST:
+        raise
+directorio_actual = os.getcwd()
+
+path = directorio_actual + '/base_datos_antonio/base_datos.json' # agregar el path que te quede mejor
 
 try:
     with open(path) as f:
@@ -39,7 +49,7 @@ def new_user():
 
 def login():
     '''Acceso a tu cuenta'''
-    login_ok = False
+
     intento = 1
     print('\nVas a hacer un inicio de sesion. Tienes tres intentos.')
     while intento < 4:
@@ -48,7 +58,6 @@ def login():
 
         if username in base_datos_dict and base_datos_dict[username] == password:
             print('\n¡Haz ingresado correctamente!')
-            login_ok = True
             break
 
         else:
@@ -56,7 +65,7 @@ def login():
                 print('Credenciales incorrectas, ingresa denuevo tus credenciales!\n')
                 intento += 1
 
-    return login_ok
+    return f'Bienvenido {username}'
 
 
 def new_password():
